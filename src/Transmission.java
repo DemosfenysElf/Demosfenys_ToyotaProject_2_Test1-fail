@@ -1,2 +1,3 @@
-package PACKAGE_NAME;public enum Transmission {
+public enum Transmission {
+    automatic, mechanics, robot
 }

@@ -1,8 +1,8 @@
-public class Wheels {
-    private int diametr;
+public class Wheel {
+    private final int diametr;
     private boolean isPunctured = false; //false = колесо целое;
 
-    public Wheels(int diametr) {
+    public Wheel(int diametr) {
         this.diametr = diametr;
     }
 
@@ -14,14 +14,6 @@ public class Wheels {
         return !isPunctured;
     }
 
-    public String wheelIntegrity() {
-        if (isPunctured) {
-            return "Колесо проколото";
-        }
-
-        return "Колесо не проколото";
-    }
-
     public void patchWheel() {
         this.isPunctured = false;
     }
@@ -30,5 +22,8 @@ public class Wheels {
         this.isPunctured = true;
     }
 
-
+    @Override
+    public String toString() {
+        return ("Wheel[" + "diametr=" + diametr + ", isPunctured=" + isPunctured + ']');
+    }
 }

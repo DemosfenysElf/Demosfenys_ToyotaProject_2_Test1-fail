@@ -1,2 +1,3 @@
-public enum CarMod {
+public enum CarColor {
+    white, black, silver, red
 }
